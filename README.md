@@ -1,6 +1,6 @@
 # Precision Landscape & Hardscape
 
-Website for Precision Landscape & Hardscape, a landscaping and hardscaping business in northern Michigan.
+Website for Precision Landscape & Hardscape, a landscaping and hardscaping business in West Michigan.
 
 Live site: https://theloafbloke.github.io
 

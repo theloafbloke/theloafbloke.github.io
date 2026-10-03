@@ -1,6 +1,6 @@
 # Precision Landscape & Hardscape website
 
-A static one-page site for a small (2–4 person) landscaping and hardscaping business in northern Michigan.
+A static one-page site for a small (2–4 person) landscaping and hardscaping business in West Michigan.
 Hosted on GitHub Pages at https://theloafbloke.github.io (repo `theloafbloke/theloafbloke.github.io`, branch `main`, served from the repo root).
 The original client brief is in `BRIEF.md`.
 
