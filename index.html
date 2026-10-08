@@ -9,7 +9,8 @@
   <meta property="og:title" content="Precision Landscape & Hardscape">
   <meta property="og:description" content="Owner-run landscaping and hardscaping in West Michigan. Free estimates.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
@@ -22,13 +23,7 @@
   <header class="site-header">
     <div class="header-bar wrap">
       <a class="brand" href="#top" aria-label="Precision Landscape & Hardscape, back to top">
-        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-          <rect x="2" y="26" width="16" height="6" rx="1.5" fill="#8a9545"/>
-          <rect x="20" y="26" width="18" height="6" rx="1.5" fill="#6f7a35"/>
-          <rect x="8" y="33" width="24" height="5" rx="1.5" fill="#5c6440"/>
-          <path d="M20 24C9 22 7 12 10 4c8 2 13 9 10 20Z" fill="#3f7a4f"/>
-          <path d="M20 24c3-8 9-12 15-11-1 7-7 12-15 11Z" fill="#5b9a68"/>
-        </svg>
+        <img class="brand-mark" src="assets/mark-color.png" alt="" width="256" height="256">
         <span class="brand-text">
           <span class="brand-name">Precision</span>
           <span class="brand-sub">Landscape &amp; Hardscape</span>
@@ -79,10 +74,10 @@
           <a class="btn btn-ghost btn-lg" href="tel:+12317408131">Call 231-740-8131</a>
         </div>
         <ul class="trust-row" aria-label="Why customers choose us">
-          <li>Free estimates</li>
+          <li>Free itemized estimates</li>
           <li>Owners on every job</li>
-          <li>Clear written estimates</li>
           <li>Locally owned</li>
+          <li>Fully insured</li>
         </ul>
       </div>
     </section>
@@ -218,29 +213,65 @@
         <h2 id="work-title">Before &amp; after</h2>
         <p class="section-lede">Drag the handle to compare. Every photo here is one of our own jobs.</p>
 
+        <!-- Each pair must use the same photo size. Landscape pairs are 1200x900; add class "ba-tall" for portrait pairs (900x1200). -->
         <div class="ba-grid">
-          <!-- TODO: replace placeholder pairs with real photos taken from the same angle. Keep each pair the same size. -->
           <figure class="ba">
             <div class="ba-frame" style="--pos: 50%">
-              <img class="ba-after" src="assets/img/after-placeholder.svg" alt="After: finished garden bed with stone edging" width="1200" height="800" loading="lazy">
-              <img class="ba-before" src="assets/img/before-placeholder.svg" alt="Before: overgrown garden bed" width="1200" height="800" loading="lazy">
+              <img class="ba-after" src="assets/img/work/tree-ring-after.jpg" alt="After: tree base with a clean border and fresh mulch" width="1200" height="900" loading="lazy">
+              <img class="ba-before" src="assets/img/work/tree-ring-before.jpg" alt="Before: tree base with an old ring of rocks" width="1200" height="900" loading="lazy">
               <span class="ba-tag ba-tag-before" aria-hidden="true">Before</span>
               <span class="ba-tag ba-tag-after" aria-hidden="true">After</span>
               <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare before and after">
             </div>
-            <figcaption><strong>Garden bed renewal</strong> &middot; [Town]</figcaption>
+            <figcaption><strong>Tree ring</strong></figcaption>
           </figure>
           <figure class="ba">
             <div class="ba-frame" style="--pos: 50%">
-              <img class="ba-after" src="assets/img/after-placeholder.svg" alt="After: new stone walkway" width="1200" height="800" loading="lazy">
-              <img class="ba-before" src="assets/img/before-placeholder.svg" alt="Before: worn dirt path" width="1200" height="800" loading="lazy">
+              <img class="ba-after" src="assets/img/work/patio-after.jpg" alt="After: clean paver patio with a bench" width="1200" height="900" loading="lazy">
+              <img class="ba-before" src="assets/img/work/patio-before.jpg" alt="Before: paver patio overgrown with weeds" width="1200" height="900" loading="lazy">
               <span class="ba-tag ba-tag-before" aria-hidden="true">Before</span>
               <span class="ba-tag ba-tag-after" aria-hidden="true">After</span>
               <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare before and after">
             </div>
-            <figcaption><strong>Stone walkway</strong> &middot; [Town]</figcaption>
+            <figcaption><strong>Patio cleanup</strong></figcaption>
+          </figure>
+          <figure class="ba">
+            <div class="ba-frame" style="--pos: 50%">
+              <img class="ba-after" src="assets/img/work/front-yard-after.jpg" alt="After: front yard with a curved gravel border" width="1200" height="900" loading="lazy">
+              <img class="ba-before" src="assets/img/work/front-yard-before.jpg" alt="Before: bare graded soil in front of the house" width="1200" height="900" loading="lazy">
+              <span class="ba-tag ba-tag-before" aria-hidden="true">Before</span>
+              <span class="ba-tag ba-tag-after" aria-hidden="true">After</span>
+              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+            </div>
+            <figcaption><strong>Front yard edging</strong></figcaption>
           </figure>
         </div>
+
+        <details class="ba-more">
+          <summary>See more projects</summary>
+          <div class="ba-grid">
+            <figure class="ba ba-tall">
+              <div class="ba-frame" style="--pos: 50%">
+                <img class="ba-after" src="assets/img/work/rock-steps-after.jpg" alt="After: finished natural stone steps up a slope" width="900" height="1200" loading="lazy">
+                <img class="ba-before" src="assets/img/work/rock-steps-before.jpg" alt="Before: large stones set out along the slope" width="900" height="1200" loading="lazy">
+                <span class="ba-tag ba-tag-before" aria-hidden="true">Before</span>
+                <span class="ba-tag ba-tag-after" aria-hidden="true">After</span>
+                <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+              </div>
+              <figcaption><strong>Natural stone steps</strong></figcaption>
+            </figure>
+            <figure class="ba ba-tall">
+              <div class="ba-frame" style="--pos: 50%">
+                <img class="ba-after" src="assets/img/work/walkway-after.jpg" alt="After: paver walkway along the side of the house" width="900" height="1200" loading="lazy">
+                <img class="ba-before" src="assets/img/work/walkway-before.jpg" alt="Before: prepared base with landscape fabric" width="900" height="1200" loading="lazy">
+                <span class="ba-tag ba-tag-before" aria-hidden="true">Before</span>
+                <span class="ba-tag ba-tag-after" aria-hidden="true">After</span>
+                <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+              </div>
+              <figcaption><strong>Side walkway</strong></figcaption>
+            </figure>
+          </div>
+        </details>
       </div>
     </section>
 
@@ -356,6 +387,7 @@
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <div>
+        <img class="footer-logo" src="assets/mark-color.png" alt="PL&amp;H logo" width="256" height="256" loading="lazy">
         <p class="footer-brand">Precision Landscape &amp; Hardscape</p>
         <p>Owner-run landscaping and hardscaping in West Michigan.</p>
       </div>
