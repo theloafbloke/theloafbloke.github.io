@@ -358,6 +358,16 @@ p { margin: 0 0 1em; }
 .footer-copy { color: var(--gray-500); font-size: .85rem; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.08); }
 
 /* ---------- Thank-you page ---------- */
+.policy { padding: 56px 0 80px; }
+.policy .wrap { max-width: 46rem; }
+.policy h1 { font-size: clamp(2.25rem, 5vw, 3.25rem); color: var(--green-900); margin-bottom: .2em; }
+.policy h2 { font-size: 1.35rem; color: var(--green-900); margin: 1.6em 0 .4em; }
+.policy-date { color: var(--text-muted); font-weight: 600; }
+.policy p, .policy li { color: var(--text-muted); }
+.policy ul { padding-left: 1.2em; }
+.policy li { margin-bottom: .4em; }
+.policy .btn { margin-top: 1.8em; }
+.footer-copy a { color: var(--olive-200); }
 .thanks { min-height: 60vh; display: grid; place-items: center; text-align: center; padding: 80px 0; }
 .thanks h1 { font-size: clamp(2.25rem, 5vw, 3.25rem); color: var(--green-900); }
 .thanks p { color: var(--text-muted); max-width: 34rem; margin-left: auto; margin-right: auto; }
