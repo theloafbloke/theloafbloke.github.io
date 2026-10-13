@@ -226,6 +226,7 @@ p { margin: 0 0 1em; }
 .ba-more summary::-webkit-details-marker { display: none; }
 .ba-more summary:hover { background: var(--green-800); color: var(--white); }
 .ba-more[open] summary { margin-bottom: 28px; }
+.ba-more[open] .ba-more-open, .ba-more:not([open]) .ba-more-close { display: none; }
 .ba-more .ba-grid { margin: 0 auto; }
 .ba { margin: 0; }
 .ba-frame {
