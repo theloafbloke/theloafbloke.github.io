@@ -28,6 +28,11 @@
     document.querySelectorAll(".js-open-estimate").forEach(function (btn) {
       btn.addEventListener("click", function (e) {
         e.preventDefault();
+        var oldStatus = dialog.querySelector(".form-status");
+        if (oldStatus) {
+          oldStatus.className = "form-status";
+          oldStatus.textContent = "";
+        }
         dialog.showModal();
         var first = dialog.querySelector('input[name="name"]');
         if (first) first.focus();
@@ -48,6 +53,15 @@
   document.querySelectorAll(".estimate-form").forEach(function (form) {
     var dateInput = form.querySelector('input[type="date"]');
     if (dateInput) dateInput.min = minDate;
+
+    // Clear an old "sent" or "error" message as soon as someone starts a new request
+    form.addEventListener("input", function () {
+      var old = form.querySelector(".form-status");
+      if (old && old.textContent) {
+        old.className = "form-status";
+        old.textContent = "";
+      }
+    });
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
