@@ -220,8 +220,7 @@ p { margin: 0 0 1em; }
 .ba-more summary::-webkit-details-marker { display: none; }
 .ba-more summary:hover { background: var(--green-800); color: var(--white); }
 .ba-more[open] summary { margin-bottom: 28px; }
-.ba-more .ba-grid { max-width: 760px; margin: 0 auto; }
-@media (min-width: 880px) { .ba-more .ba-grid { grid-template-columns: 1fr 1fr; } }
+.ba-more .ba-grid { margin: 0 auto; }
 .ba { margin: 0; }
 .ba-frame {
   position: relative; overflow: hidden; border-radius: var(--radius);
