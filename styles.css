@@ -119,10 +119,15 @@ p { margin: 0 0 1em; }
 .site-nav a:hover, .site-nav a.is-active { color: var(--white); border-bottom-color: var(--olive-400); }
 .site-nav li:first-child a { padding-left: 0; }
 
-/* Very narrow phones: keep everything on one line */
-@media (max-width: 380px) {
+/* Phones: keep the logo, name, phone icon and estimate button on one line (email stays in the contact section and footer) */
+@media (max-width: 480px) {
   .brand-sub { display: none; }
-  .brand-mark { width: 56px; height: 56px; margin: 0; }
+  .brand-mark { width: 48px; height: 48px; margin: 0; }
+  .brand { gap: 6px; }
+  .brand-name { font-size: 1.25rem; }
+  .header-bar { min-height: 64px; gap: 8px; }
+  .header-contact { gap: 2px; }
+  .header-contact .contact-link:nth-child(2) { display: none; }
   .header-contact .btn { padding: .5em .7em; font-size: .9rem; }
 }
 
@@ -177,6 +182,7 @@ p { margin: 0 0 1em; }
   background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius);
   padding: 20px; box-shadow: var(--shadow);
 }
+@media (max-width: 559px) { .person { grid-template-columns: 1fr; } .person .person-photo { width: 120px; } }
 @media (min-width: 560px) { .person { grid-template-columns: 128px 1fr; padding: 24px; gap: 24px; } }
 .person-photo { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
 .person h4 { font-size: 1.5rem; margin-bottom: .1em; color: var(--green-900); }
